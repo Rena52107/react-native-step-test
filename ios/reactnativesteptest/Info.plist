@@ -72,5 +72,11 @@
     <string>Light</string>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
+
+    <!-- Below is added for React Native Health -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>Read and understand health data.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Share workout data with other apps.</string>
   </dict>
 </plist>
