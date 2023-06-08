@@ -28,6 +28,12 @@
           <string>com.rena07521.reactnativesteptest</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>exp+react-native-step-test</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>1</string>
@@ -46,6 +52,10 @@
         </dict>
       </dict>
     </dict>
+    <key>NSHealthShareUsageDescription</key>
+    <string>Custom health share permission</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Custom health update permission</string>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>
@@ -60,6 +70,8 @@
     <array>
       <string>UIInterfaceOrientationPortrait</string>
       <string>UIInterfaceOrientationPortraitUpsideDown</string>
+      <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
@@ -72,11 +84,5 @@
     <string>Light</string>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
-
-    <!-- Below is added for React Native Health -->
-    <key>NSHealthShareUsageDescription</key>
-    <string>Read and understand health data.</string>
-    <key>NSHealthUpdateUsageDescription</key>
-    <string>Share workout data with other apps.</string>
   </dict>
 </plist>
