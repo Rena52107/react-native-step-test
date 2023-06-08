@@ -15,26 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.rena07521.reactnativesteptest"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.rena07521.reactnativesteptest"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "react-native-health"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "e8381144-78b5-4da0-ad5f-2cb5b7634468"
-      }
     }
   }
 }
