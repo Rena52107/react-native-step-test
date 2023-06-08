@@ -1,15 +1,20 @@
 {
-    "expo": {
-      "plugins": [
-        [
-          "react-native-health",
-          {
-            "isClinicalDataEnabled": true,
-            "healthSharePermission": "Custom health share permission",
-            "healthUpdatePermission": "Custom health update permission",
-            "healthClinicalDescription": "Custom health share permission for clinical data"
-          }
-        ]
+  "expo": {
+    "plugins": [
+      [
+        "react-native-health",
+        {
+          "isClinicalDataEnabled": true,
+          "healthSharePermission": "Custom health share permission",
+          "healthUpdatePermission": "Custom health update permission",
+          "healthClinicalDescription": "Custom health share permission for clinical data"
+        }
       ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e8381144-78b5-4da0-ad5f-2cb5b7634468"
+      }
     }
   }
+}
