@@ -16,6 +16,15 @@
     },
     "ios": {
       "bundleIdentifier": "com.rena07521.reactnativesteptest"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e8381144-78b5-4da0-ad5f-2cb5b7634468"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/e8381144-78b5-4da0-ad5f-2cb5b7634468"
     }
   }
 }
