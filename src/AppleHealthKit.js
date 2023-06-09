@@ -179,7 +179,7 @@ export const getActiveEnergyBurned = (callback) => {
         }
       });
   
-      console.log('getActiveEnergyBurned: ', dailyEnergyBarned);
+      // console.log('getActiveEnergyBurned: ', dailyEnergyBarned);
       callback(null, dailyEnergyBarned);
     });
 };
@@ -213,7 +213,7 @@ export const getDailyActiveEnergyBurnedSamples = (callback) => {
       }
     });
 
-    console.log('getDailyActiveEnergyBurnedSamples: ', dailyEnergyBarned);
+    // console.log('getDailyActiveEnergyBurnedSamples: ', dailyEnergyBarned);
     callback(null, dailyEnergyBarned);
   });
 };
