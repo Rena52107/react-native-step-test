@@ -20,7 +20,7 @@ import {
   getDailyActiveEnergyBurnedSamples,
 } from './AppleHealthKit';
 
-export default function ScreenApple() {
+export default function Screen() {
   const [authStatus, setAuthStatus] = useState({});
   const [todayStep, setTodayStep] = useState(0);
   const [sevenDaysStep, setSevenDaysStep] = useState(0);

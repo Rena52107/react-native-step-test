@@ -9,28 +9,10 @@ import {
   Platform,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import {
-  requestAuthorization,
-  getDailyStepCountSamples,
-  getStepCount,
-  getAuthStatus,
-  getDistance,
-  getDailyDistanceWalkingRunningSamples,
-  getActiveEnergyBurned,
-  getDailyActiveEnergyBurnedSamples,
-} from './src/AppleHealthKit';
-import ScreenApple from './src/ScreenApple';
+import Screen from './src/Screen';
 
 export default function App() {
-  if (Platform.OS === 'ios') {
-    return (
-      <>
-        <ScreenApple />
-      </>
-    );
-  } else {
-    return <Text>This is not iOS</Text>;
-  }
+  return <Screen />;
 }
 
 const styles = StyleSheet.create({
