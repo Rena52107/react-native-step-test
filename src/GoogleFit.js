@@ -53,7 +53,24 @@ export const getStepCount = async () => {
   try {
     const authResult = await authorizeFit(); // authorizeFit 関数を呼び出す
     const res = await GoogleFit.getDailyStepCountSamples(opt);
-    console.log(res[1].steps);
+    console.log(res);
+    return res[1].steps[0].value;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
+export const getDistance = async () => {
+  const opt = {
+    startDate: today.toISOString(),
+    endDate: new Date().toISOString(),
+    bucketInterval: 1,
+  };
+
+  try {
+    const authResult = await authorizeFit(); // authorizeFit 関数を呼び出す
+    const res = await GoogleFit.getDailyDistanceSamples(opt);
+    console.log(res);
     return res[1].steps[0].value;
   } catch (error) {
     throw new Error(error.message);
