@@ -1,23 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Platform,
-} from 'react-native';
+import { StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import {
   requestAuthorization,
-  getDailyStepCountSamples,
   getStepCount,
   getAuthStatus,
   getDistance,
-  getDailyDistanceWalkingRunningSamples,
   getActiveEnergyBurned,
-  getDailyActiveEnergyBurnedSamples,
 } from './AppleHealthKit';
 
 export default function Screen() {

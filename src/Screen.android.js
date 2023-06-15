@@ -5,7 +5,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import { getStepCount, getDistance, getCalories } from './GoogleFit';
 
 export default function Screen() {
-  const [authStatus, setAuthStatus] = useState(false);
   const [steps, setSteps] = useState(0);
   const [distance, setDistance] = useState(0);
   const [calories, setCalories] = useState(0);

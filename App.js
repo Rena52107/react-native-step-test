@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Platform,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Screen from './src/Screen';
