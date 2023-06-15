@@ -23,11 +23,8 @@ import {
 export default function Screen() {
   const [authStatus, setAuthStatus] = useState({});
   const [todayStep, setTodayStep] = useState(0);
-  const [sevenDaysStep, setSevenDaysStep] = useState(0);
   const [todayDistance, setTodayDistance] = useState(0);
-  const [sevenDaysDistance, setSevenDaysDistance] = useState(0);
   const [todayEnergyBarned, setTodayEnergyBarned] = useState(0);
-  const [sevenDaysEnergyBarned, setSevenDaysEnergyBarned] = useState(0);
 
   useEffect(() => {
     requestAuthorization((error) => {
@@ -35,15 +32,6 @@ export default function Screen() {
         console.log('[ERROR] Cannot grant permissions!');
         return;
       }
-
-      getDailyStepCountSamples((err, result) => {
-        if (err) {
-          console.error(err);
-          return;
-        }
-        setSevenDaysStep(result);
-      });
-
       getStepCount((err, result) => {
         if (err) {
           console.error(err);
@@ -60,28 +48,12 @@ export default function Screen() {
         setTodayDistance(result);
       });
 
-      getDailyDistanceWalkingRunningSamples((err, result) => {
-        if (err) {
-          console.error(err);
-          return;
-        }
-        setSevenDaysDistance(result);
-      });
-
       getActiveEnergyBurned((err, result) => {
         if (err) {
           console.error(err);
           return;
         }
         setTodayEnergyBarned(result);
-      });
-
-      getDailyActiveEnergyBurnedSamples((err, result) => {
-        if (err) {
-          console.error(err);
-          return;
-        }
-        setSevenDaysEnergyBarned(result);
       });
     });
   }, [authStatus]);
@@ -118,24 +90,13 @@ export default function Screen() {
               <Text style={styles.sectionDescription}>
                 Today's steps: {todayStep}
               </Text>
-              <Text style={styles.sectionDescription}>
-                Past 7 days' steps: {JSON.stringify(sevenDaysStep)}
-              </Text>
 
               <Text style={styles.sectionDescription}>
                 Today's distance: {todayDistance}
               </Text>
-              <Text style={styles.sectionDescription}>
-                Past 7 days' distance:
-                {JSON.stringify(sevenDaysDistance)}
-              </Text>
 
               <Text style={styles.sectionDescription}>
                 Today's energy barned: {JSON.stringify(todayEnergyBarned)}
-              </Text>
-              <Text style={styles.sectionDescription}>
-                Past 7 energy barned:
-                {JSON.stringify(sevenDaysEnergyBarned)}
               </Text>
             </View>
           </View>
