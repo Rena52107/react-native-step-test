@@ -61,30 +61,30 @@ export default function Screen() {
     <>
       <StatusBar barStyle='dark-content' />
       <View>
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>React Native Test app</Text>
-              <Text>This is iOS</Text>
-              <Text onPress={handlePressGetAuthStatus}>
-                Press me to get Auth Status
-              </Text>
-              <Text style={styles.sectionDescription}>
-                {JSON.stringify(authStatus, null, 2)}
-              </Text>
+        <View style={styles.body}>
+          <View style={styles.sectionContainer}>
+            <Text style={styles.sectionTitle}>React Native Test app</Text>
+            <Text>This is iOS</Text>
+            <Text onPress={handlePressGetAuthStatus}>
+              Press me to get Auth Status
+            </Text>
+            <Text style={styles.sectionDescription}>
+              {JSON.stringify(authStatus, null, 2)}
+            </Text>
 
-              <Text style={styles.sectionDescription}>
-                Today's steps: {todayStep}
-              </Text>
+            <Text style={styles.sectionDescription}>
+              Today's steps: {todayStep}
+            </Text>
 
-              <Text style={styles.sectionDescription}>
-                Today's distance: {todayDistance}
-              </Text>
+            <Text style={styles.sectionDescription}>
+              Today's distance: {todayDistance}
+            </Text>
 
-              <Text style={styles.sectionDescription}>
-                Today's energy barned: {JSON.stringify(todayEnergyBarned)}
-              </Text>
-            </View>
+            <Text style={styles.sectionDescription}>
+              Today's energy barned: {JSON.stringify(todayEnergyBarned)}
+            </Text>
           </View>
+        </View>
       </View>
     </>
   );
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
   body: {
     backgroundColor: Colors.white,
-    paddingVertical: 40
+    paddingVertical: 40,
   },
   sectionContainer: {
     marginTop: 32,
