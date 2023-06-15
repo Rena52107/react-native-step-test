@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native';
+import { StyleSheet, View, Text, StatusBar } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import {
   requestAuthorization,
@@ -61,10 +61,6 @@ export default function Screen() {
     <>
       <StatusBar barStyle='dark-content' />
       <View>
-        <ScrollView
-          contentInsetAdjustmentBehavior='automatic'
-          style={styles.scrollView}
-        >
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>React Native Test app</Text>
@@ -89,7 +85,6 @@ export default function Screen() {
               </Text>
             </View>
           </View>
-        </ScrollView>
       </View>
     </>
   );
@@ -105,6 +100,7 @@ const styles = StyleSheet.create({
   },
   body: {
     backgroundColor: Colors.white,
+    paddingVertical: 40
   },
   sectionContainer: {
     marginTop: 32,
